@@ -69,28 +69,28 @@ setWeatherData({
   
   
   return (
-<div className="weather h-[500px] w-full max-w-[800px] md:h-[600px] md:w-[90%] sm:h-[700px] sm:w-[95%] mx-auto">
-<div className="search-bar">
-<input ref={inputRef} type="text" placeholder='Search' />
-<FaSearch className="search-icon" onClick={()=>search(inputRef.current.value)} />
+<div className="self-center h-[500px] w-[300px] p-2.5 lg:h-[500px] lg:w-[700px] rounded-2xl bg-white/30 backdrop-blur-lg flex flex-col items-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+<div className="flex items-center gap-3 mt-5">
+<input ref={inputRef} type="text" placeholder='Search' className='h-12 border-none outline-none rounded-full pl-4 lg:pl-6 text-gray-600 bg-[#ebfffc] text-lg' />
+<FaSearch className="text-2xl text-black cursor-pointer transition-colors duration-300 ease-in-out rounded-full hover:text-blue-500 bg-[#ebfffc] w-10 h-8" onClick={()=>search(inputRef.current.value)} />
 {/* <img src="search.png" alt="" className="search-icon" /> */}
     </div>
     {weatherData?<>
-      <img src={weatherData.icon} alt="" className='weather-icon' />
-    <p className='temperature'>{weatherData.temperature}°C </p>
-    <p className='location'>{weatherData.location}</p>
-    <div className="weather-data text-white flex lg:gap-40 mt-10">
-      <div className="col">
-        <img className='wind' src={wave_icon} alt="" />
+      <img src={weatherData.icon} alt="" className='w-[120px]' />
+    <p className='text-white text-5xl leading-none'>{weatherData.temperature}°C </p>
+    <p className='text-white text-[30px]'>{weatherData.location}</p>
+    <div className=" text-white text-[20px] flex lg:gap-52 mt-10">
+      <div className="flex items-start gap-0.5 text-xl">
+        <img className='w-[50px]' src={wave_icon} alt="" />
         <div>
-          <p>{weatherData.humidity} %</p>
+          <p>{weatherData.humidity}%</p>
 <span>Humidity</span>
         </div>
       </div>
-      <div className="col">
+      <div className="flex items-start gap-0.5 text-xl">
         <img className='wind ' src={wind_icon} alt="" />
         <div>
-          <p>{weatherData.windSpeed} Km/hr</p>
+          <p>{weatherData.windSpeed}Km/hr</p>
 <span>Wind speed</span>
         </div>
       </div>
