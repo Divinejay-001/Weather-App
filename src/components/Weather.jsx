@@ -88,7 +88,7 @@ setWeatherData({
         </div>
       </div>
       <div className="flex items-start gap-0.5 text-xl">
-        <img className='wind ' src={wind_icon} alt="" />
+        <img className='w-[50px] ' src={wind_icon} alt="" />
         <div>
           <p>{weatherData.windSpeed}Km/hr</p>
 <span>Wind speed</span>
