@@ -69,7 +69,7 @@ setWeatherData({
   
   
   return (
-    <div className='weather w-[500px] h-[500px] lg:w-[800px] md:w-[800px] md:h-[800px]'>
+    <div className='weather  h-[500px] lg:w-[800px] md:w-[800px] md:h-[800px]'>
 <div className="search-bar">
 <input ref={inputRef} type="text" placeholder='Search' />
 <FaSearch className="search-icon" onClick={()=>search(inputRef.current.value)} />
