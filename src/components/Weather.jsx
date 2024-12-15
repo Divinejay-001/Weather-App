@@ -71,7 +71,7 @@ setWeatherData({
   return (
 <div className="self-center h-[500px] w-[300px] p-2.5 lg:h-[500px] lg:w-[700px] rounded-2xl bg-white/30 backdrop-blur-lg flex flex-col items-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
 <div className="flex items-center gap-3 mt-5">
-<input ref={inputRef} type="text" placeholder='Search' className='h-12 border-none outline-none rounded-full pl-4 lg:pl-6 text-gray-600 bg-[#ebfffc] text-lg' />
+<input ref={inputRef} type="text" placeholder='Search' className='h-12 border-none outline-none rounded-full pl-2 lg:pl-6 text-gray-600 bg-[#ebfffc] text-[15px]' />
 <FaSearch className="text-2xl text-black cursor-pointer transition-colors duration-300 ease-in-out rounded-full hover:text-blue-500 bg-[#ebfffc] w-10 h-8" onClick={()=>search(inputRef.current.value)} />
 {/* <img src="search.png" alt="" className="search-icon" /> */}
     </div>
