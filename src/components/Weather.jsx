@@ -75,7 +75,7 @@ setWeatherData({
   ref={inputRef} 
   type="text" 
   placeholder="Search" 
-  className="h-12 border-none outline-none rounded-full fixed left-4 lg:left-0 lg:right-0  md:pl-6  text-gray-600 bg-[#ebfffc] text-base md:text-lg "
+  className="w-full sm:w-auto h-10 sm:h-12 border-none outline-none rounded-full pl-3 sm:pl-5 lg:pl-6 text-sm sm:text-base lg:text-lg text-gray-600 bg-[#ebfffc]"
 />
 <FaSearch className="text-2xl  z-[1] text-black cursor-pointer transition-colors duration-300 ease-in-out rounded-full hover:text-blue-500 bg-[#ebfffc] w-10 h-8" onClick={()=>search(inputRef.current.value)} />
 {/* <img src="search.png" alt="" className="search-icon" /> */}
